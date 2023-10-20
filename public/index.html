@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+
+    <title>Pricing component with toggle challenge | Frontend Mentor</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body
+    class="font-montserrat text-[15px] relative min-h-screen flex flex-col bg-very-light-grayish-blue"
+  >
+    <main class="flex-grow relative">
+      <section
+        class="container py-[60px] md:py-20 lg:py-[100px] overflow-hidden"
+      >
+        <div
+          class="intro flex flex-col justify-center items-center gap-9 lg:gap-11"
+        >
+          <h1 class="heading-1">Our Pricing</h1>
+
+          <div
+            class="switch-wrapper flex items-center gap-6 text-light-grayish-blue"
+          >
+            <p>Annually</p>
+            <label class="switch">
+              <input type="checkbox" checked />
+              <span class="slider round"></span>
+            </label>
+            <p>Monthly</p>
+          </div>
+        </div>
+
+        <div
+          class="pricing-grid flex flex-col md:grid grid-cols-3 place-content-center place-items-center mt-20 text-center gap-8 md:gap-0"
+        >
+          <div
+            class="basic-price bg-white w-full p-8 shadow-custom rounded-xl md:rounded-r-none"
+          >
+            <h2 class="text-grayish-blue mb-8 text-[17px]">Basic</h2>
+            <span id="basic-price" class="price big-text text-dark-grayish-blue"
+              >$19.99</span
+            >
+            <ul class="flex flex-col divide-y-2 border-t-2 border-b-2 mt-8">
+              <li class="text-grayish-blue py-3">500 GB Storage</li>
+              <li class="text-grayish-blue py-3">2 Users Allowed</li>
+              <li class="text-grayish-blue py-3">Send up to 3 GB</li>
+            </ul>
+            <button type="button" class="button-dark w-full mt-10">
+              Learn More
+            </button>
+          </div>
+
+          <div
+            class="pro-price w-full p-8 bg-gradient-to-br from-[hsl(236,72%,79%)] to-[hsl(237,63%,64%)] shadow-custom rounded-xl md:h-[110%] flex flex-col justify-center"
+          >
+            <h2 class="text-white mb-8 text-[17px]">Professional</h2>
+            <span id="pro-price" class="price big-text text-white">$24.99</span>
+            <ul class="flex flex-col divide-y-2 border-t-2 border-b-2 mt-8">
+              <li class="text-white py-3">2 TB Storage</li>
+              <li class="text-white py-3">10 Users Allowed</li>
+              <li class="text-white py-3">Send up to 20 GB</li>
+            </ul>
+            <button type="button" class="button-light w-full mt-10">
+              Learn More
+            </button>
+          </div>
+
+          <div
+            class="master-price bg-white w-full p-8 shadow-custom rounded-xl md:rounded-l-none"
+          >
+            <h2 class="text-grayish-blue mb-8 text-[17px]">Master</h2>
+            <span
+              id="master-price"
+              class="price big-text text-dark-grayish-blue"
+              >$39.99</span
+            >
+            <ul class="flex flex-col divide-y-2 border-t-2 border-b-2 mt-8">
+              <li class="text-grayish-blue py-3">2 TB Storage</li>
+              <li class="text-grayish-blue py-3">10 Users Allowed</li>
+              <li class="text-grayish-blue py-3">Send up to 20 GB</li>
+            </ul>
+            <button type="button" class="button-dark w-full mt-10">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div
+      class="container absolute bottom-4 text-center text-light-grayish-blue"
+    >
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        class="text-grayish-blue"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://alexandre-zahrai.vercel.app/"
+        target="_blank"
+        class="text-grayish-blue"
+        >Alex Zahrai</a
+      >.
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
