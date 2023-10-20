@@ -1,6 +1,6 @@
 # Frontend Mentor - Pricing component with toggle solution
 
-This is a solution to the [Pricing component with toggle challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Pricing component with toggle challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -11,7 +11,6 @@ This is a solution to the [Pricing component with toggle challenge on Frontend M
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -36,7 +35,7 @@ Users should be able to:
 
 ### What I learned
 
-I got more comofortable working with inputs whose type is equal to checkbox for making toggle switches.
+I got more comfortable working with inputs whose type is equal to checkbox for making toggle switches. Additionally, I made a conscious effort to reduce redundancy in my code - especially my javascript. For that, I utitlized the map function.
 
 ## Author
 

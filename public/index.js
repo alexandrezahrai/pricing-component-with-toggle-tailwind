@@ -12,14 +12,9 @@ priceSwitch.addEventListener("change", updatePricing);
 // Helper function(s)
 function updatePricing() {
   let isChecked = priceSwitch.checked;
+  let pricesToUse = isChecked ? monthlyPrices : yearlyPrices;
 
-  if (isChecked) {
-    basicPrice.innerHTML = monthlyPrices[0];
-    proPrice.innerHTML = monthlyPrices[1];
-    masterPrice.innerHTML = monthlyPrices[2];
-  } else {
-    basicPrice.innerHTML = yearlyPrices[0];
-    proPrice.innerHTML = yearlyPrices[1];
-    masterPrice.innerHTML = yearlyPrices[2];
-  }
+  [basicPrice, proPrice, masterPrice].map((price, index) => {
+    price.innerHTML = pricesToUse[index];
+  });
 }
