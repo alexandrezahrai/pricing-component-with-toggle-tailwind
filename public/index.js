@@ -17,4 +17,8 @@ function updatePricing() {
   [basicPrice, proPrice, masterPrice].map((price, index) => {
     price.innerHTML = pricesToUse[index];
   });
+
+  isChecked
+    ? priceSwitch.setAttribute("aria-checked", "true")
+    : priceSwitch.setAttribute("aria-checked", "false");
 }
