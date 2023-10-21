@@ -527,6 +527,10 @@ video {
 .relative {
   position: relative;
 }
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -547,6 +551,12 @@ video {
 }
 .w-full {
   width: 100%;
+}
+.max-w-\[1150px\] {
+  max-width: 1150px;
+}
+.max-w-\[1050px\] {
+  max-width: 1050px;
 }
 .flex-grow {
   flex-grow: 1;
