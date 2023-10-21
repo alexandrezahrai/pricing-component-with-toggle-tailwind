@@ -6,11 +6,8 @@ const masterPrice = document.getElementById("master-price");
 const monthlyPrices = ["$19.99", "$24.99", "$39.99"];
 const yearlyPrices = ["$240", "$300", "$480"];
 
-// Event listener(s)
-priceSwitch.addEventListener("change", updatePricing);
-
 // Helper function(s)
-function updatePricing() {
+const updatePricing = () => {
   let isChecked = priceSwitch.checked;
   let pricesToUse = isChecked ? monthlyPrices : yearlyPrices;
 
@@ -21,4 +18,7 @@ function updatePricing() {
   isChecked
     ? priceSwitch.setAttribute("aria-checked", "true")
     : priceSwitch.setAttribute("aria-checked", "false");
-}
+};
+
+// Event listener(s)
+priceSwitch.addEventListener("change", updatePricing);
